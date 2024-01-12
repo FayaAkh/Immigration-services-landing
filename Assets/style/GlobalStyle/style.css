@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1048px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Mediator Web";
   src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
