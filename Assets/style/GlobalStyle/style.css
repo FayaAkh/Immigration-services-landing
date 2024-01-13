@@ -15,6 +15,75 @@
   src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
   src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web") format("svg");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1048px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Mediator Web";
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web") format("svg");
+}
+.header {
+  width: 100%;
+  background-color: #f4b647;
+}
+
+.header-row {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.header-row .header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.header-row .header-menu .header-menu__link {
+  width: 10vw;
+  box-shadow: 0 0 10px rgba(97, 4, 4, 0.5);
+  border-radius: 0.5rem;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  font-weight: bolder;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1.2rem;
+}
+.header-row .header-menu .header-menu__link:first-child {
+  margin-left: 0;
+}
+.header-row .header-menu .header-menu__link:hover {
+  text-decoration: underline;
+}
+.header-row .header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+}
+.header-row .logo__img,
+.header-row .telegram__img,
+.header-row .whatsapp__img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .container-applicants {
   max-width: 1920px;
   width: 100%;

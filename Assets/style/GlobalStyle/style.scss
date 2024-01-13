@@ -1,15 +1,16 @@
 @import "../templates";
 @import "../vars";
+@import "../header";
 
 .container-applicants {
-    max-width: 1920px;
-    width: 100%;
-    margin: auto;
-    .applicants_title {
-        @include text (2.5rem, 800);
-        margin: 3rem;
-    }
-.wrapper-applicants {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  .applicants_title {
+    @include text(2.5rem, 800);
+    margin: 3rem;
+  }
+  .wrapper-applicants {
     position: relative;
     width: 100%;
     display: flex;
@@ -17,41 +18,39 @@
     align-items: center;
 
     .block {
-    width: 30vw;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+      width: 30vw;
+      height: 25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    .content {
+      .content {
         width: 100%;
         .applicants_img {
-            width: 20rem;
-            margin-bottom: -.2rem;
+          width: 20rem;
+          margin-bottom: -0.2rem;
         }
         .applicants_text {
-            @include text (1.1rem, 400);
-            background-color: rgb(249, 246, 246);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: .5rem;
-            text-align: left;
-            padding: 1rem;
+          @include text(1.1rem, 400);
+          background-color: rgb(249, 246, 246);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          border-radius: 0.5rem;
+          text-align: left;
+          padding: 1rem;
         }
+      }
     }
-    }
-}
+  }
 }
 .info {
-display: block;
-margin-left: auto;
-margin-right: auto; 
-@include text (1.1rem, 400);
-background-color: #f4b647;
-width: 60vw;
-text-align: center;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-border-radius: .5rem;
-padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include text(1.1rem, 400);
+  background-color: #f4b647;
+  width: 60vw;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }

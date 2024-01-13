@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Assets/style/GlobalStyle/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Assets/style/GlobalStyle/style.css" />
     <title>La ReloBase</title>
 </head>
 <body>
-<!-- Applicants section -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-row">
+        <div class="header-logo">
+          <img class="logo__img" src="Assets/image/logo.png" alt="logo" />
+        </div>
+        <nav class="header-menu">
+          <a href="#" class="header-menu__link">О нас</a>
+          <a href="#" class="header-menu__link">Услуги</a>
+          <a href="#" class="header-menu__link">Условия</a>
+          <a href="#applicants" class="header-menu__link">Для кого</a>
+          <a href="#" class="header-menu__link">Отзывы</a>
+        </nav>
+        <div class="header-contacts">
+          <div class="header-contacts__telegram">
+            <img
+              class="telegram__img"
+              src="Assets/image/icon-tg.svg"
+              alt="telegram"
+            />
+          </div>
+          <div class="header-contacts__whatsapp">
+            <img
+              class="whatsapp__img"
+              src="Assets/image/contacts-whatsapp-icon.svg"
+              alt="whatsapp"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+    <!-- Applicants section -->
     <div class="container-applicants">
-        <h2 class="applicants_title">Кто может подаваться?</h2>
-        <div class="wrapper-applicants">
-            <div class="block">
-                <div class="content">
-                    <img class="applicants_img" src="Assets/image/1.png" alt="Freelancer">
-                    <p class="applicants_text">Фрилансеры и сотрудники, работающие удаленно
-                по найму на иностранную компанию </p>
-                </div>
+      <h2 id="applicants" class="applicants_title">Кто может подаваться?</h2>
+      <div class="wrapper-applicants">
+        <div class="block">
+          <div class="content">
+            <img
+              class="applicants_img"
+              src="Assets/image/1.png"
+              alt="Freelancer"
+            />
+            <p class="applicants_text">
+              Фрилансеры и сотрудники, работающие удаленно по найму на
+              иностранную компанию
+            </p>
+          </div>
         </div>
         <div class="block">
-            <div class="content">
-                <img class="applicants_img" src="Assets/image/2.png" alt="Entrepreneur">
-                <p class="applicants_text">Предприниматели, которые могут вести бизнес
-                    удаленно</p>
-            </div>
+          <div class="content">
+            <img
+              class="applicants_img"
+              src="Assets/image/2.png"
+              alt="Entrepreneur"
+            />
+            <p class="applicants_text">
+              Предприниматели, которые могут вести бизнес удаленно
+            </p>
+          </div>
         </div>
+      </div>
+      <p class="info">
+        ВАЖНО! Не обязательно работать в сфере IT, чтобы стать цифровым
+        кочевником. Digital Nomad – это любой удаленный сотрудник, который
+        работает на себя или компанию, зарегистрированную за пределами Испании.
+      </p>
     </div>
-    <p class="info">ВАЖНО! Не обязательно работать в сфере IT, чтобы стать цифровым 
-        кочевником.
-        Digital Nomad – это любой удаленный сотрудник, который работает на себя или 
-        компанию,
-        зарегистрированную за пределами Испании.  </p>
-</div>
-</body>
+  </body>
 </html>
