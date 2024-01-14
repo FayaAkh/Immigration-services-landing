@@ -1,27 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-    .container{
-    max-width: 1048px;
-    width: 100%;
-    margin: 0 auto;
-    }
-
-  @font-face {
-    font-family: "Mediator Web";
-    src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
-    src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web")format("svg");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1048px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-  @mixin text ($font-size, $font-weight) {
-    color: $text-color;
-    font-size: $font-size;
-    font-family:$font-text;
-    font-weight:$font-weight;
-  }
+@font-face {
+  font-family: "Mediator Web";
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web")
+      format("svg");
+}
+
+@mixin text($font-size, $font-weight) {
+  color: $text-color;
+  font-size: $font-size;
+  font-family: $font-text;
+  font-weight: $font-weight;
+}
