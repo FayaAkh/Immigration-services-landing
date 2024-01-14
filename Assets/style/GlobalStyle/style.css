@@ -43,6 +43,8 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+  box-shadow: 0 0 10px #f4b647;
+  border-radius: 0.5rem;
 }
 .header-row .header-menu {
   display: flex;
@@ -52,7 +54,7 @@
 }
 .header-row .header-menu .header-menu__link {
   width: 10vw;
-  box-shadow: 0 0 10px rgba(97, 4, 4, 0.5);
+  box-shadow: 0 0 10px #b51628;
   border-radius: 0.5rem;
   color: #160404;
   font-size: 1.2rem;
@@ -82,6 +84,68 @@
 .header-row .whatsapp__img {
   width: 100%;
   max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1048px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Mediator Web";
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
+  src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web") format("svg");
+}
+.first-block {
+  row-gap: 5%;
+  margin-left: 5%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), transparent 70%), url(../bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-block .first-block__text {
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  color: #3c3c3b;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.first-block .first-block__button {
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: #b51628;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  line-height: 1.55;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.first-block .first-block__button:hover {
+  background: #f4b647;
 }
 
 .container-applicants {
