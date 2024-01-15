@@ -93,8 +93,11 @@
 .container-benefits {
   width: 100%;
   background-color: #f4b54723;
+  margin-top: 6.5rem;
   .container-benefits_title {
     @include text(2.5rem, 800);
+    padding-top: 5rem;
+    margin: 3rem;
   }
   .benefits {
     max-width: 50rem;
