@@ -4,45 +4,44 @@
 @import "../main";
 
 .wrapper-about-section {
-    width: 100%;
-    padding: 2rem;
-    
-  .about-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: normal;    
-    
-    .about-section__img {
-      width: 50%;
+  width: 100%;
+  padding: 2rem;
+  
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;    
+  
+  .about-section__img {
+    width: 50%;
 
+  }
+  .container-about {
+    width: 50%;
+    background: #f4b647;
+    padding: 3rem;
+    margin-left: 2rem;
+
+    .about-title {
+      margin-bottom: 2.5rem;
+      @include text (2.5rem, 800);
     }
-    .container-about {
-      width: 50%;
-      background: #f4b647;
-      padding: 3rem;
-      margin-left: 2rem;
 
-      .about-title {
-        margin-bottom: 2.5rem;
-        @include text (2.5rem, 800);
-      }
-
-      .about-text {
-        @include text (1.2rem, 400);
-        margin-bottom: 2.5rem;
-      }
-      .about-title__small {
-        @include text (1.5rem, 800);
-        margin-bottom: 2.5rem;
-      }
-      .about-section__list {
-        @include text (1.2rem, 400);
-        line-height: 170%;
-      }
+    .about-text {
+      @include text (1.2rem, 400);
+      margin-bottom: 2.5rem;
+    }
+    .about-title__small {
+      @include text (1.5rem, 800);
+      margin-bottom: 2.5rem;
+    }
+    .about-section__list {
+      @include text (1.2rem, 400);
+      line-height: 170%;
     }
   }
 }
-
+}
 .container-applicants {
   max-width: 1920px;
   width: 100%;
