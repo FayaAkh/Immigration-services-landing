@@ -148,6 +148,41 @@
   background: #f4b647;
 }
 
+.wrapper-about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.wrapper-about .about-section {
+  background: url(../../image/about-bgnd.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 55%;
+  overflow: hidden;
+  padding: 6.25rem 0;
+}
+.wrapper-about .about-section .container-about {
+  width: 60%;
+  float: right;
+  background: #f4b647;
+  padding: 5rem;
+}
+.wrapper-about .about-section .container-about .about-title {
+  margin-bottom: 2.5rem;
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+}
+.wrapper-about .about-section .container-about .about-text {
+  color: #160404;
+  font-size: 1.1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+}
+
 .container-applicants {
   max-width: 1920px;
   width: 100%;
