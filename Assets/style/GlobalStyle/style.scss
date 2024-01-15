@@ -3,27 +3,24 @@
 @import "../header";
 @import "../main";
 
-
-.wrapper-about {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-
+.wrapper-about-section {
+    width: 100%;
+    padding: 2rem;
+    
   .about-section {
-    background: url(../../image/about-bgnd.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 55%;
-    overflow: hidden;
-    padding: 6.25rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;    
+    
+    .about-section__img {
+      width: 50%;
 
+    }
     .container-about {
-      width: 60%;
-      float: right;
+      width: 50%;
       background: #f4b647;
-      padding: 5rem;
+      padding: 3rem;
+      margin-left: 2rem;
 
       .about-title {
         margin-bottom: 2.5rem;
@@ -31,7 +28,16 @@
       }
 
       .about-text {
-        @include text (1.1rem, 400);
+        @include text (1.2rem, 400);
+        margin-bottom: 2.5rem;
+      }
+      .about-title__small {
+        @include text (1.5rem, 800);
+        margin-bottom: 2.5rem;
+      }
+      .about-section__list {
+        @include text (1.2rem, 400);
+        line-height: 170%;
       }
     }
   }
