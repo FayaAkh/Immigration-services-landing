@@ -5,9 +5,10 @@
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @font-face {
@@ -22,9 +23,10 @@
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @font-face {
@@ -93,9 +95,10 @@
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @font-face {
@@ -149,9 +152,6 @@
 }
 
 /*=================================================================Feedback=====================================================================*/
-.feedback {
-  padding: 0 15px 0 15px;
-}
 .feedback_title {
   color: #160404;
   font-size: 2.5rem;
@@ -218,9 +218,10 @@
 }
 
 .container {
-  max-width: 1048px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @font-face {
@@ -230,7 +231,6 @@
 }
 .footer {
   margin-top: 60px;
-  padding: 0 15px 0 15px;
   background-color: #f4b647;
   width: 100%;
 }
@@ -283,10 +283,17 @@
   font-family: "Mediator Web";
   font-weight: 300;
   cursor: pointer;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .column_link {
     font-size: 16px;
+  }
+}
+.column_link:hover {
+  text-decoration: underline;
+}
+
 .wrapper-about-section {
   width: 100%;
   padding: 2rem;
