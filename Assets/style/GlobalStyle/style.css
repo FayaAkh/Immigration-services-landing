@@ -199,7 +199,7 @@
     font-size: 19px;
   }
 }
-.feedback .cont::after {
+.feedback .containet_item::after {
   content: "";
   position: absolute;
   border: 10px solid transparent;
@@ -211,7 +211,6 @@
   border-left-color: rgb(249, 246, 246);
 }
 
-/*=================================================================Footer=====================================================================*/
 * {
   margin: 0;
   padding: 0;
