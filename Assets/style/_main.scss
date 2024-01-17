@@ -3,10 +3,15 @@
 
 .first-block {
   row-gap: 5%;
-  margin-left: 5%;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), transparent 70%), url(../bg.jpg);
+  background: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      transparent 70%
+    ),
+    url(../bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,8 +25,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: 5%;
   }
   .first-block__button {
+    margin-left: 10%;
     @include text(1.2rem, 700);
     width: 15rem;
     height: 5rem;
@@ -35,7 +42,8 @@
     justify-content: center;
     flex-wrap: wrap;
     &:hover {
-      background: #f4b647;
+      background: rgb(146, 33, 4);
+      cursor: pointer;
     }
   }
 }
@@ -83,8 +91,8 @@
   }
   .containet_item::after {
     content: "";
-    position: absolute; 
-    border: 10px solid transparent; 
+    position: absolute;
+    border: 10px solid transparent;
     margin-left: 35px;
     border-color: rgb(249, 246, 246);
     border-top-color: rgb(249, 246, 246);
@@ -93,5 +101,3 @@
     border-left-color: rgb(249, 246, 246);
   }
 }
-
-
