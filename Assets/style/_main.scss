@@ -2,6 +2,7 @@
 @import "../style/vars";
 
 .first-block {
+  padding-top: 10vh;
   row-gap: 5%;
   width: 100%;
   height: 100vh;
@@ -19,6 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .first-block__text {
     @include text(2.5rem, 700);
     color: #3c3c3b;
@@ -26,6 +28,9 @@
     flex-direction: column;
     gap: 20px;
     margin-left: 5%;
+    @media (max-width: $breakpoint_md) {
+      @include text(1.5rem, 700);
+    }
   }
   .first-block__button {
     margin-left: 10%;
