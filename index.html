@@ -10,16 +10,18 @@
   <body>
     <!-- Header -->
     <header class="header">
+      <div class="burger_menu"><img src="Assets/image/burger_menu.svg" alt="burger_menu"></div>
       <div class="header-row">
         <div class="header-logo">
           <img class="logo__img" src="Assets/image/logo.png" alt="logo" />
         </div>
         <nav class="header-menu">
-          <a href="#" class="header-menu__link">О нас</a>
-          <a href="#" class="header-menu__link">Услуги</a>
+          <a href="#about" class="header-menu__link">О нас</a>
+          <a href="#products" class="header-menu__link">Услуги и тарифы</a>
           <a href="#" class="header-menu__link">Условия</a>
           <a href="#applicants" class="header-menu__link">Для кого</a>
-          <a href="#" class="header-menu__link">Отзывы</a>
+          <a href="#" class="header-menu__link">Что дает ВНЖ</a>
+          <a href="#feedback" class="header-menu__link">Отзывы</a>
         </nav>
         
         <div class="header-contacts">
@@ -46,10 +48,10 @@
     <main class="main">
       <div class="first-block">
         <div class="first-block__text">
-          <p>ВНЖ Цифрового кочевника</p>
-          <p>Digital Nomad Visa</p>
-          <p>Получение ВНЖ Испании</p>
-          <p>на 3 года в течение 1 месяца</p>
+          <p class="first-block__text">ВНЖ Цифрового кочевника</p>
+          <p class="first-block__text">Digital Nomad Visa</p>
+          <p class="first-block__text">Получение ВНЖ Испании</p>
+          <p class="first-block__text">на 3 года в течение 1 месяца</p>
         </div>
         <div class="first-block__button">Получить консультацию</div>
       </div>
@@ -61,7 +63,7 @@
           <div class="about-section">
             <img class="about-section__img" src="./Assets/image/about-bgnd.jpg" alt="Вид на улицу Испании">
             <div class="container-about">
-              <h2 class="about-title">О нас</h2>
+              <h2 id="about" class="about-title">О нас</h2>
               <p class="about-text">Наша экспертная команда, состоящая из юристов и иммиграционных консультантов, работающих
                 на территории Испании, готова помочь и максимально упростить получение ВНЖ Испании.</p>
               <h2 class="about-title__small">Мы готовы сделать ваш переезд в другую страну максимально комфортным:</h2>
@@ -153,7 +155,7 @@
 
      <!-- Products -->
      <div class="container-products">
-      <h2 class="container-products__title"> Услуги и тарифы</h2>
+      <h2 id="products" class="container-products__title"> Услуги и тарифы</h2>
       <div class="products-block">
         <div class="products-block__img">
           <img class="image" src="/Assets/image/cardFree.png" alt="Картинка">
@@ -297,7 +299,7 @@
     <!--Feedback-->
     <div class="feedback">
       <div class="container">
-        <h2 class="feedback_title">Отзывы наших клиентов</h2>
+        <h2 id="feedback" class="feedback_title">Отзывы наших клиентов</h2>
         <div class="feedback_items">
           <div class="containet_item">
             <div class="feedback_item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quos consequuntur id perspiciatis, repellat provident saepe ducimus sunt adipisci dicta, assumenda culpa illo quasi doloribus consectetur doloremque minima, vero itaque.</div>

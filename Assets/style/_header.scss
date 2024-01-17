@@ -4,6 +4,9 @@
 .header {
   width: 100%;
   background-color: #f4b647;
+  .burger_menu {
+    display: none;
+  }
 }
 .header-row {
   height: auto;
@@ -34,6 +37,7 @@
       }
       &:hover {
         text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
