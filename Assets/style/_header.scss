@@ -2,22 +2,27 @@
 @import "../style/vars";
 
 .header {
-  width: 100%;
-  background-color: #f4b647;
+  width: 100vw;
   position: fixed;
   z-index: 999;
-
+  height: auto;
   .header_burger {
     display: none;
-    @media (max-width: $breakpoint_md) {
+    .burger {
+      position: relative;
+    }
+    @media (max-width: $breakpoint_md), (max-width: $breakpoint_sm) {
       display: flex;
       justify-content: flex-end;
       padding: 10px;
       cursor: pointer;
+      width: 100%;
+      overflow: hidden;
     }
   }
 }
 .header-row {
+  background-color: #f4b647;
   height: 10vh;
   display: flex;
   flex-wrap: wrap;

@@ -35,24 +35,30 @@
   src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web") format("svg");
 }
 .header {
-  width: 100%;
-  background-color: #f4b647;
+  width: 100vw;
   position: fixed;
   z-index: 999;
+  height: auto;
 }
 .header .header_burger {
   display: none;
 }
-@media (max-width: 768px) {
+.header .header_burger .burger {
+  position: relative;
+}
+@media (max-width: 768px), (max-width: 376px) {
   .header .header_burger {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
     cursor: pointer;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
 .header-row {
+  background-color: #f4b647;
   height: 10vh;
   display: flex;
   flex-wrap: wrap;
@@ -125,11 +131,20 @@
   src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot");
   src: url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8b9adae463bffb26a8e8a43f81fe280b.svg#Mediator Web") format("svg");
 }
-.first-block {
+.main {
   padding-top: 10vh;
+}
+@media (max-width: 768px), (max-width: 376px) {
+  .main {
+    padding-top: 0;
+  }
+}
+
+.first-block {
   row-gap: 5%;
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), transparent 70%), url(../bg.jpg);
   background-size: cover;
   background-position: center;
@@ -138,6 +153,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 768px), (max-width: 376px) {
+  .first-block {
+    width: 100%;
+  }
 }
 .first-block .first-block__text {
   color: #160404;
@@ -153,7 +173,7 @@
 @media (max-width: 768px) {
   .first-block .first-block__text {
     color: #160404;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Mediator Web";
     font-weight: 700;
   }
@@ -175,6 +195,18 @@
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .first-block .first-block__button {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+    background-color: #b51628;
+    width: 12rem;
+    height: 3rem;
+  }
 }
 .first-block .first-block__button:hover {
   background: rgb(146, 33, 4);
@@ -344,53 +376,67 @@
   }
 }
 .wrapper-about-section .about-section {
-  max-width: 100%;
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;
 }
 @media (max-width: 768px) {
   .wrapper-about-section .about-section {
-    max-width: 50rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.wrapper-about-section .about-section .about-section__img {
+  max-width: 45%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .wrapper-about-section .about-section .about-section__img {
+    max-width: 40rem;
     width: 100%;
+    max-height: 40rem;
     padding: 1.5rem 0;
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section {
+  .wrapper-about-section .about-section .about-section__img {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    width: 100%;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     padding: 1rem 0;
   }
 }
-.wrapper-about-section .about-section .about-section__img {
-  width: 100%;
-  padding-right: 1rem;
-}
-@media (max-width: 768px) {
-  .wrapper-about-section .about-section .about-section__img {
-    padding-right: 0;
-  }
-}
-@media (max-width: 376px) {
-  .wrapper-about-section .about-section .about-section__img {
-    padding-right: 0;
-  }
-}
-.wrapper-about-section .container-about {
-  max-width: 100%;
+.wrapper-about-section .about-section .container-about {
+  max-width: 45%;
   width: 100%;
   background: #f4b647;
   padding: 3rem;
+  margin-left: 1rem;
 }
 @media (min-width: 768px) {
-  .wrapper-about-section .container-about {
+  .wrapper-about-section .about-section .container-about {
+    max-width: 40rem;
     width: 100%;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    margin-left: 0;
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .container-about {
-    padding: 3rem 1rem;
+  .wrapper-about-section .about-section .container-about {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    width: 100%;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    padding: 5rem 0 0 0;
     background: none;
   }
 }
-.wrapper-about-section .container-about .about-title {
+.wrapper-about-section .about-section .container-about .about-title {
   margin-bottom: 2.5rem;
   color: #160404;
   font-size: 2.5rem;
@@ -398,7 +444,7 @@
   font-weight: 800;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .container-about .about-title {
+  .wrapper-about-section .about-section .container-about .about-title {
     margin-bottom: 2rem;
     color: #160404;
     font-size: 2rem;
@@ -407,7 +453,7 @@
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .container-about .about-title {
+  .wrapper-about-section .about-section .container-about .about-title {
     margin-bottom: 1.5rem;
     color: #160404;
     font-size: 1.8rem;
@@ -415,7 +461,7 @@
     font-weight: 700;
   }
 }
-.wrapper-about-section .container-about .about-text {
+.wrapper-about-section .about-section .container-about .about-text {
   color: #160404;
   font-size: 1.2rem;
   font-family: "Mediator Web";
@@ -423,12 +469,12 @@
   margin-bottom: 2.5rem;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .container-about .about-text {
+  .wrapper-about-section .about-section .container-about .about-text {
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .container-about .about-text {
+  .wrapper-about-section .about-section .container-about .about-text {
     color: #160404;
     font-size: 1rem;
     font-family: "Mediator Web";
@@ -436,7 +482,7 @@
     margin-bottom: 1.8rem;
   }
 }
-.wrapper-about-section .container-about .about-title__small {
+.wrapper-about-section .about-section .container-about .about-title__small {
   color: #160404;
   font-size: 1.5rem;
   font-family: "Mediator Web";
@@ -444,7 +490,7 @@
   margin-bottom: 2.5rem;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .container-about .about-title__small {
+  .wrapper-about-section .about-section .container-about .about-title__small {
     color: #160404;
     font-size: 1.3rem;
     font-family: "Mediator Web";
@@ -453,11 +499,11 @@
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .container-about .about-title__small {
+  .wrapper-about-section .about-section .container-about .about-title__small {
     margin-bottom: 1.5rem;
   }
 }
-.wrapper-about-section .container-about .about-section__list {
+.wrapper-about-section .about-section .container-about .about-section__list {
   color: #160404;
   font-size: 1.2rem;
   font-family: "Mediator Web";
@@ -465,7 +511,7 @@
   line-height: 170%;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .container-about .about-section__list {
+  .wrapper-about-section .about-section .container-about .about-section__list {
     color: #160404;
     font-size: 1.2rem;
     font-family: "Mediator Web";
@@ -474,7 +520,7 @@
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .container-about .about-section__list {
+  .wrapper-about-section .about-section .container-about .about-section__list {
     color: #160404;
     font-size: 1rem;
     font-family: "Mediator Web";
@@ -681,7 +727,7 @@
 }
 .container-benefits .benefits_list {
   border-top: 2px dashed;
-  border-color: #b51628 !important;
+  border-color: #b51628;
   margin: 0;
   padding: 2rem;
   counter-increment: section;
@@ -712,12 +758,6 @@
   text-align: center;
   color: white;
 }
-@media (max-width: 376px) {
-  .container-benefits .benefits_list:nth-child(even):before {
-    height: 3rem;
-    width: 3rem;
-  }
-}
 .container-benefits .benefits_list:nth-child(odd):before {
   content: counter(section);
   left: 100%;
@@ -730,12 +770,6 @@
   background-color: #b51628;
   text-align: center;
   color: white;
-}
-@media (max-width: 376px) {
-  .container-benefits .benefits_list:nth-child(odd):before {
-    height: 3rem;
-    width: 3rem;
-  }
 }
 .container-benefits .benefits_list:nth-child(even) {
   border-left: 0.2rem dashed;
