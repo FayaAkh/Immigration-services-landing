@@ -5,6 +5,8 @@
 @import "../footer";
 
 .wrapper-about-section {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 2rem;
   @media (max-width: $breakpoint_md) {
@@ -111,7 +113,6 @@
   }
 }
 .container-applicants {
-  max-width: 1920px;
   width: 100%;
   margin: auto;
   @media (max-width: $breakpoint_md) {
