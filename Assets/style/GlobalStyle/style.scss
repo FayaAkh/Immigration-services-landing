@@ -5,114 +5,114 @@
 @import "../footer";
 
 .wrapper-about-section {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 2rem;
   @media (max-width: $breakpoint_md) {
     padding: 1rem;
-}
+  }
   @media (max-width: $breakpoint_sm) {
     padding: 0;
   }
 
-.about-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: normal;   
-  @media (max-width: $breakpoint_md) {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center; 
-  }
-  
-  .about-section__img {
-    max-width: 45%;
-    width: 100%;
+  .about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
     @media (max-width: $breakpoint_md) {
-      max-width: 40rem;
-      width: 100%;
-      max-height: 40rem;
-      padding: 1.5rem 0;
-    }
-    @media (max-width: $breakpoint_sm) {
-      max-width: fit-content;
-      width: 100%;
-      max-height: fit-content;
-      padding: 1rem 0;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
     }
 
+    .about-section__img {
+      max-width: 45%;
+      width: 100%;
+      @media (max-width: $breakpoint_md) {
+        max-width: 40rem;
+        width: 100%;
+        max-height: 40rem;
+        padding: 1.5rem 0;
+      }
+      @media (max-width: $breakpoint_sm) {
+        max-width: fit-content;
+        width: 100%;
+        max-height: fit-content;
+        padding: 1rem 0;
+      }
+    }
+    .container-about {
+      max-width: 45%;
+      width: 100%;
+      background: #f4b647;
+      padding: 3rem;
+      margin-left: 1rem;
+      @media (min-width: $breakpoint_md) {
+        max-width: 40rem;
+        width: 100%;
+        max-height: fit-content;
+        margin-left: 0;
+      }
+      @media (max-width: $breakpoint_sm) {
+        max-width: fit-content;
+        width: 100%;
+        max-height: fit-content;
+        padding: 5rem 0 0 0;
+        background: none;
+      }
+
+      .about-title {
+        margin-bottom: 2.5rem;
+        @include text(2.5rem, 800);
+        @media (max-width: $breakpoint_md) {
+          margin-bottom: 2rem;
+          @include text(2rem, 700);
+        }
+        @media (max-width: $breakpoint_sm) {
+          margin-bottom: 1.5rem;
+          @include text(1.8rem, 700);
+        }
+      }
+
+      .about-text {
+        @include text(1.2rem, 400);
+        margin-bottom: 2.5rem;
+        @media (max-width: $breakpoint_md) {
+          margin-bottom: 2rem;
+        }
+        @media (max-width: $breakpoint_sm) {
+          @include text(1rem, 400);
+          margin-bottom: 1.8rem;
+        }
+      }
+      .about-title__small {
+        @include text(1.5rem, 800);
+        margin-bottom: 2.5rem;
+        @media (max-width: $breakpoint_md) {
+          @include text(1.3rem, 700);
+          margin-bottom: 2rem;
+        }
+        @media (max-width: $breakpoint_sm) {
+          margin-bottom: 1.5rem;
+        }
+      }
+      .about-section__list {
+        @include text(1.2rem, 400);
+        line-height: 170%;
+        @media (max-width: $breakpoint_md) {
+          @include text(1.2rem, 400);
+          line-height: 130%;
+        }
+        @media (max-width: $breakpoint_sm) {
+          @include text(1rem, 400);
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
   }
-  .container-about {
-    max-width: 45%;
-    width: 100%;
-    background: #f4b647;
-    padding: 3rem;
-    margin-left: 1rem;
-    @media (min-width: $breakpoint_md) {
-      max-width: 40rem;
-      width: 100%;
-      max-height: fit-content;
-      margin-left: 0;
-    }
-    @media (max-width: $breakpoint_sm) {
-      max-width: fit-content;
-      width: 100%;
-      max-height: fit-content;
-      padding: 5rem 0 0 0;
-      background: none;
-    }
-
-    .about-title {
-      margin-bottom: 2.5rem;
-      @include text (2.5rem, 800);
-      @media (max-width: $breakpoint_md) {
-        margin-bottom: 2rem;
-        @include text (2rem, 700);
-      }
-      @media (max-width: $breakpoint_sm) {
-        margin-bottom: 1.5rem;
-        @include text (1.8rem, 700);
-      }
-    }
-
-    .about-text {
-      @include text (1.2rem, 400);
-      margin-bottom: 2.5rem;
-      @media (max-width: $breakpoint_md) {
-        margin-bottom: 2rem;
-      }
-      @media (max-width: $breakpoint_sm) {
-        @include text (1rem, 400);
-        margin-bottom: 1.8rem;
-      }
-    }
-    .about-title__small {
-      @include text (1.5rem, 800);
-      margin-bottom: 2.5rem;
-      @media (max-width: $breakpoint_md) {
-        @include text (1.3rem, 700);
-        margin-bottom: 2rem;
-      }
-      @media (max-width: $breakpoint_sm) {
-        margin-bottom: 1.5rem;
-      }
-    }
-    .about-section__list {
-      @include text (1.2rem, 400);
-      line-height: 170%;
-      @media (max-width: $breakpoint_md) {
-        @include text (1.2rem, 400);
-      line-height: 130%;
-      }
-      @media (max-width: $breakpoint_sm) {
-        @include text (1rem, 400);
-        margin-bottom: 1.8rem;
-      }
-    }
-  }
-}
 }
 .container-applicants {
-  max-width: 1920px;
   width: 100%;
   margin: auto;
   @media (max-width: $breakpoint_md) {
@@ -166,7 +166,6 @@
           }
           @media (max-width: $breakpoint_sm) {
             width: 13rem;
-          
           }
         }
         .applicants_text {
@@ -180,7 +179,7 @@
             @include text(1rem, 400);
           }
           @media (max-width: $breakpoint_sm) {
-            @include text(.8rem, 400);
+            @include text(0.8rem, 400);
             text-align: center;
           }
         }
@@ -202,11 +201,11 @@
 
   @media (max-width: $breakpoint_md) {
     @include text(1rem, 400);
-    margin-top: -.8rem;
+    margin-top: -0.8rem;
   }
   @media (max-width: $breakpoint_sm) {
     width: 90%;
-    @include text(.8rem, 400);
+    @include text(0.8rem, 400);
     background-color: #f4b54786;
   }
 }
@@ -241,72 +240,17 @@
     max-width: 50rem;
     width: 100%;
     margin: auto;
-    }
-    .benefits_list {
-      border-top: 2px dashed;
-      border-color: #b51628;
-      margin: 0;
-      padding: 2rem;
-      counter-increment: section;
-      position: relative;
-      @include text(1.5rem, 400);
-      @media (max-width: $breakpoint_sm) {
-        @include text(1rem, 400);
-      }
-    }
-
-    .benefits_list:nth-child(even):before {
-      content: counter(section);
-      right: 100%;
-      margin-right: -1.25rem;
-      position: absolute;
-      border-radius: 50%;
-      padding: 0.9rem;
-      height: 4rem;
-      width: 4rem;
-      background-color: #b51628;
-      text-align: center;
-      color: white;
-    }
-
-    .benefits_list:nth-child(odd):before {
-      content: counter(section);
-      left: 100%;
-      margin-left: -1.25rem;
-      position: absolute;
-      border-radius: 50%;
-      padding: 0.9rem;
-      height: 4rem;
-      width: 4rem;
-      background-color: #b51628;
-      text-align: center;
-      color: white;
-    }
-    .benefits_list:nth-child(even) {
-      border-left: 0.2rem dashed;
-      border-top-left-radius: 1.8rem;
-      border-bottom-left-radius: 1.8rem;
-      margin-right: 1.8rem;
-      padding-right: 0;
-    }
-
-    .benefits_list:nth-child(odd) {
-      border-right: 0.2rem dashed;
-      border-top-right-radius: 1.8rem;
-      border-bottom-right-radius: 1.8rem;
-      margin-left: 1.8rem;
-      padding-left: 0;
-    }
-
-    .benefits_list:first-child {
-      border-top: 0;
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-    }
-
-    .benefits_list:last-child {
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
+  }
+  .benefits_list {
+    border-top: 2px dashed;
+    border-color: #b51628;
+    margin: 0;
+    padding: 2rem;
+    counter-increment: section;
+    position: relative;
+    @include text(1.5rem, 400);
+    @media (max-width: $breakpoint_sm) {
+      @include text(1rem, 400);
     }
   }
 
@@ -425,7 +369,15 @@
             max-height: 200px;
           }
   }
-  .products-block__product-name{
+  .products-block__img {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    .image {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+  .products-block__product-name {
     grid-row: 1/2;
     grid-column: 2/4;  
     min-height: 50px;
@@ -433,20 +385,20 @@
     max-width: 50rem;
     justify-content: start;
     align-items: center;
-    @include text (1.5rem, 800);
-      margin-bottom: 2.5rem;
-      @media (max-width: $breakpoint_md) {
-        @include text (1.3rem, 700);
-        margin-bottom: 2rem;
-      }
-      @media (max-width: $breakpoint_sm) {
-        margin-bottom: 1.5rem;
-      }
+    @include text(1.5rem, 800);
+    margin-bottom: 2.5rem;
+    @media (max-width: $breakpoint_md) {
+      @include text(1.3rem, 700);
+      margin-bottom: 2rem;
+    }
+    @media (max-width: $breakpoint_sm) {
+      margin-bottom: 1.5rem;
+    }
   }
-  .products-block__modal{
+  .products-block__modal {
     grid-row: 3/4;
     grid-column: 2/3;
-    max-height:80%;
+    max-height: 80%;
     max-width: 80%;
   }
   .products-block__cost{
@@ -460,7 +412,7 @@
     border-radius: 10px 10px 10px 10px;
     background: #f4b647;
     color: #fff;
-    @include text (1.2rem, 700);
+    @include text(1.2rem, 700);
   }
   .products-block__btn{
     grid-row:3/4;
@@ -470,7 +422,7 @@
     justify-content: end;
     align-items: end;
   }
-  .products-block__order{
+  .products-block__order {
     @include text(1.2rem, 700);
     width: 15rem;
     height: 5rem;
@@ -485,7 +437,6 @@
     flex-wrap: wrap;
     &:hover {
       background: #f4b647;
+    }
   }
-  }
-  }
- 
+}
