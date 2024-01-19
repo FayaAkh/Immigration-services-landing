@@ -263,7 +263,7 @@
   background-color: rgba(244, 181, 71, 0.137254902);
 
 .requirements__title{
-margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 @include text (2.5rem, 800);
 @media (max-width: $breakpoint_md) {
   margin-bottom: 2rem;
@@ -315,6 +315,18 @@ grid-gap: 2rem;
     @media (max-width: $breakpoint_sm) {
       max-width: 376px;
       width: 100%;
+    }
+  }
+  .container-products__title{
+    margin-bottom: 2.5rem;
+    @include text (2.5rem, 800);
+    @media (max-width: $breakpoint_md) {
+      margin-bottom: 2rem;
+      @include text (2rem, 700);
+    }
+    @media (max-width: $breakpoint_sm) {
+      margin-bottom: 1.5rem;
+      @include text (1.8rem, 700);
     }
   }
   .products-block__free {
