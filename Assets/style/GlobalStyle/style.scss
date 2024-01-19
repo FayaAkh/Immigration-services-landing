@@ -334,9 +334,13 @@ grid-gap: 2rem;
       justify-content: center;
       align-items: center;
       object-fit: contain;
+      @media (max-width: $breakpoint_md) {
+        display: none;
       .image{
         max-width: 200px;
         max-height: 200px;
+        
+        }
       }
     }
     .products-block__product-name_free{
@@ -414,6 +418,9 @@ grid-gap: 2rem;
           display: flex;
           justify-content: center;
           align-items: center;
+          @media (max-width: $breakpoint_md) {
+            display: none;
+          }
           .image{
             max-width: 200px;
             max-height: 200px;
