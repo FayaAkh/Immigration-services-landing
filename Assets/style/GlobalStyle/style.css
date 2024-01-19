@@ -815,11 +815,6 @@
   }
 }
 
-.container-products {
-  max-width: 1480px;
-  width: 100%;
-  margin: auto;
-}
 @media (max-width: 768px) {
   .container-products {
     max-width: 768px;

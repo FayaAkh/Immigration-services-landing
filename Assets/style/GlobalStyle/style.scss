@@ -308,9 +308,6 @@ grid-gap: 2rem;
 }
 
   .container-products {
-    max-width: 1480px;
-    width: 100%;
-    margin: auto;
     @media (max-width: $breakpoint_md) {
       max-width: 768px;
       width: 100%;
