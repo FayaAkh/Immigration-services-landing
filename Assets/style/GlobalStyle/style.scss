@@ -318,10 +318,10 @@ grid-gap: 2rem;
     }
   }
   .products-block__free {
-    min-height:200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,auto));
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
     max-width: 100%;
     padding:10px 10px 35px 10px;
     border-radius: 20px 20px 20px 20px;
@@ -346,6 +346,8 @@ grid-gap: 2rem;
     .products-block__product-name_free{
       grid-row: 1/2;
       grid-column: 2/3;
+      min-height: 50px;
+      max-width: 50rem;
       display: flex;
       justify-content:start;
       align-items: center;
@@ -361,13 +363,13 @@ grid-gap: 2rem;
     }
     .products-block__list_free{
       grid-row:2/3;
-      grid-column: 2/3;
+      grid-column: 2/4;
       list-style-type: none;
       margin-top: 0;
       @include text (1.2rem, 400);
       margin-bottom: 2.5rem;
       @media (max-width: $breakpoint_md) {
-        @include text (1.3rem, 400);
+        @include text (1rem, 400);
         margin-bottom: 2rem;
       }
       @media (max-width: $breakpoint_sm) {
@@ -462,17 +464,17 @@ grid-gap: 2rem;
     min-height: 50px;
     max-width: 80%;
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 2/4;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content:start;
     border-radius: 10px 10px 10px 10px;
     background: #f4b647;
     color: #fff;
     @include text(1.2rem, 700);
   }
   .products-block__btn{
-    grid-row:3/4;
+    grid-row:4/5;
     grid-column: 3/4; 
     text-decoration: none;
     display: flex;
