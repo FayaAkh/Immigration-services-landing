@@ -781,14 +781,14 @@
     color: #160404;
     font-size: 2rem;
     font-family: "Mediator Web";
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 @media (max-width: 376px) {
   .requirements .requirements__title {
     margin-bottom: 1.5rem;
     color: #160404;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: "Mediator Web";
     font-weight: 700;
   }
@@ -821,17 +821,107 @@
 }
 .requirements .card-text {
   color: #160404;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Mediator Web";
   font-weight: 400;
 }
-@media (max-width: 376px) {
-  .requirements .card-text {
+
+.registration {
+  width: 100%;
+  padding: 0 3rem 3rem 3rem;
+  background-color: rgba(244, 181, 71, 0.137254902);
+}
+.registration .registration__title {
+  margin-bottom: 2.5rem;
+  color: #160404;
+  font-size: 2.5rem;
+  font-family: "Mediator Web";
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .registration .registration__title {
+    margin-bottom: 2rem;
     color: #160404;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: "Mediator Web";
-    font-weight: 400;
+    font-weight: 800;
   }
+}
+@media (max-width: 376px) {
+  .registration .registration__title {
+    margin-bottom: 1.5rem;
+    color: #160404;
+    font-size: 1.5rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+  }
+}
+.registration .registration__info {
+  margin: 0 1rem 1rem 0;
+  color: #160404;
+  font-size: 1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+}
+.registration .registration__tilesWrap {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.registration .li {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  min-width: 250px;
+  padding: 1rem 0 0 1rem;
+  position: relative;
+  height: 25vh;
+  background: white;
+  border: 1px solid #252727;
+  margin: 0 1rem 2rem 0;
+}
+.registration .li:last-child {
+  margin-bottom: 0;
+}
+.registration .numbers {
+  font-size: 114px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.08;
+  top: 50px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.registration .li:hover h2 {
+  top: 0px;
+  opacity: 0.6;
+}
+.registration .li:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+}
+.registration .li:nth-child(1):before {
+  background: #C9FFBF;
+  background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+}
+.registration .li:nth-child(2):before {
+  background: #f2709c;
+  background: linear-gradient(to right, #ff9472, #f2709c);
+}
+.registration .li:nth-child(3):before {
+  background: #c21500;
+  background: linear-gradient(to right, #ffc500, #c21500);
+}
+.registration .li:nth-child(4):before {
+  background: #FC354C;
+  background: linear-gradient(to right, #0ABFBC, #FC354C);
 }
 
 @media (max-width: 768px) {
