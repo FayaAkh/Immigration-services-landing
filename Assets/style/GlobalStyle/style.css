@@ -377,12 +377,15 @@
 
 .wrapper-about-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 2rem;
 }
 @media (max-width: 768px) {
   .wrapper-about-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
   }
 }
@@ -392,67 +395,53 @@
   }
 }
 .wrapper-about-section .about-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: normal;
-}
-@media (max-width: 768px) {
-  .wrapper-about-section .about-section {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.wrapper-about-section .about-section .about-section__img {
-  max-width: 45%;
+  max-width: 100%;
   width: 100%;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .about-section .about-section__img {
-    max-width: 40rem;
+  .wrapper-about-section .about-section {
+    max-width: 50rem;
     width: 100%;
-    max-height: 40rem;
     padding: 1.5rem 0;
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section .about-section__img {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    width: 100%;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
+  .wrapper-about-section .about-section {
     padding: 1rem 0;
   }
 }
-.wrapper-about-section .about-section .container-about {
-  max-width: 45%;
+.wrapper-about-section .about-section .about-section__img {
   width: 100%;
-  background: #f4b647;
-  padding: 3rem;
-  margin-left: 1rem;
+  padding-right: 1rem;
 }
-@media (min-width: 768px) {
-  .wrapper-about-section .about-section .container-about {
-    max-width: 40rem;
-    width: 100%;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    margin-left: 0;
+@media (max-width: 768px) {
+  .wrapper-about-section .about-section .about-section__img {
+    padding-right: 0;
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section .container-about {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+  .wrapper-about-section .about-section .about-section__img {
+    padding-right: 0;
+  }
+}
+.wrapper-about-section .container-about {
+  max-width: 100%;
+  width: 100%;
+  background: #f4b647;
+  padding: 3rem;
+}
+@media (min-width: 768px) {
+  .wrapper-about-section .container-about {
     width: 100%;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    padding: 5rem 0 0 0;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper-about-section .container-about {
+    padding: 3rem 1rem;
     background: none;
   }
 }
-.wrapper-about-section .about-section .container-about .about-title {
+.wrapper-about-section .container-about .about-title {
   margin-bottom: 2.5rem;
   color: #160404;
   font-size: 2.5rem;
@@ -460,7 +449,7 @@
   font-weight: 800;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .about-section .container-about .about-title {
+  .wrapper-about-section .container-about .about-title {
     margin-bottom: 2rem;
     color: #160404;
     font-size: 2rem;
@@ -469,7 +458,7 @@
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section .container-about .about-title {
+  .wrapper-about-section .container-about .about-title {
     margin-bottom: 1.5rem;
     color: #160404;
     font-size: 1.8rem;
@@ -477,7 +466,7 @@
     font-weight: 700;
   }
 }
-.wrapper-about-section .about-section .container-about .about-text {
+.wrapper-about-section .container-about .about-text {
   color: #160404;
   font-size: 1.2rem;
   font-family: "Mediator Web";
@@ -485,12 +474,12 @@
   margin-bottom: 2.5rem;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .about-section .container-about .about-text {
+  .wrapper-about-section .container-about .about-text {
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section .container-about .about-text {
+  .wrapper-about-section .container-about .about-text {
     color: #160404;
     font-size: 1rem;
     font-family: "Mediator Web";
@@ -498,7 +487,7 @@
     margin-bottom: 1.8rem;
   }
 }
-.wrapper-about-section .about-section .container-about .about-title__small {
+.wrapper-about-section .container-about .about-title__small {
   color: #160404;
   font-size: 1.5rem;
   font-family: "Mediator Web";
@@ -506,7 +495,7 @@
   margin-bottom: 2.5rem;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .about-section .container-about .about-title__small {
+  .wrapper-about-section .container-about .about-title__small {
     color: #160404;
     font-size: 1.3rem;
     font-family: "Mediator Web";
@@ -515,11 +504,11 @@
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section .container-about .about-title__small {
+  .wrapper-about-section .container-about .about-title__small {
     margin-bottom: 1.5rem;
   }
 }
-.wrapper-about-section .about-section .container-about .about-section__list {
+.wrapper-about-section .container-about .about-section__list {
   color: #160404;
   font-size: 1.2rem;
   font-family: "Mediator Web";
@@ -527,7 +516,7 @@
   line-height: 170%;
 }
 @media (max-width: 768px) {
-  .wrapper-about-section .about-section .container-about .about-section__list {
+  .wrapper-about-section .container-about .about-section__list {
     color: #160404;
     font-size: 1.2rem;
     font-family: "Mediator Web";
@@ -536,7 +525,7 @@
   }
 }
 @media (max-width: 376px) {
-  .wrapper-about-section .about-section .container-about .about-section__list {
+  .wrapper-about-section .container-about .about-section__list {
     color: #160404;
     font-size: 1rem;
     font-family: "Mediator Web";
@@ -592,6 +581,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 @media (max-width: 376px) {
   .container-applicants .wrapper-applicants {
@@ -639,6 +629,7 @@
   border-radius: 0.5rem;
   text-align: left;
   padding: 1rem;
+  word-wrap: break-word;
 }
 @media (max-width: 768px) {
   .container-applicants .wrapper-applicants .block .content .applicants_text {
@@ -705,6 +696,25 @@
   font-weight: 800;
   padding-top: 5rem;
   margin: 3rem;
+}
+@media (max-width: 768px) {
+  .container-benefits .container-benefits_title {
+    color: #160404;
+    font-size: 2rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    padding-top: 3rem;
+    margin: 2.5rem;
+  }
+}
+@media (max-width: 376px) {
+  .container-benefits .container-benefits_title {
+    color: #160404;
+    font-size: 1.5rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    margin: 2rem;
+  }
 }
 .container-benefits .benefits {
   max-width: 50rem;
