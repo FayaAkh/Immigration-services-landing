@@ -300,6 +300,9 @@
   width: 100%;
   padding: 3rem;
   background-color: rgba(244, 181, 71, 0.137254902);
+  @media (max-width: $breakpoint_md) {
+    padding-top: 0;
+  }
 
 .requirements__title{
   margin-bottom: 2.5rem;
@@ -342,7 +345,7 @@ grid-gap: 2rem;
 
 .registration{
   width: 100%;
-  padding: 0 3rem 3rem 3rem;
+  padding: 0 3rem 2rem 3rem;
   background-color: rgba(244, 181, 71, 0.137254902);
 
   .registration__title{
