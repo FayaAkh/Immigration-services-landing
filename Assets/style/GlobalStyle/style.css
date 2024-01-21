@@ -793,11 +793,6 @@
   padding: 3rem;
   background-color: rgba(244, 181, 71, 0.137254902);
 }
-@media (max-width: 768px) {
-  .requirements {
-    padding-top: 0;
-  }
-}
 .requirements .requirements__title {
   margin-bottom: 2.5rem;
   color: #160404;
@@ -858,7 +853,7 @@
 
 .registration {
   width: 100%;
-  padding: 0 3rem 2rem 3rem;
+  padding: 0 3rem 3rem 3rem;
   background-color: rgba(244, 181, 71, 0.137254902);
 }
 .registration .registration__title {
