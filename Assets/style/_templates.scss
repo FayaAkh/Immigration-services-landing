@@ -32,3 +32,22 @@
   font-family: $font-text;
   font-weight: $font-weight;
 }
+
+@mixin button-red {
+  @include text(1.2rem, 700);
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: #b51628;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  line-height: 1.55;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  &:hover {
+    background: rgb(146, 33, 4);
+    cursor: pointer;
+  }
+}
