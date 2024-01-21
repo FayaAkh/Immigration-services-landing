@@ -904,6 +904,7 @@
   background: linear-gradient(to right, #0ABFBC, #FC354C);
 }
 
+/*=================================================================Products=====================================================================*/
 @media (max-width: 768px) {
   .container-products {
     max-width: 768px;
@@ -941,6 +942,10 @@
     font-family: "Mediator Web";
     font-weight: 700;
   }
+}
+
+.products-block__contact {
+  text-decoration: none;
 }
 
 .products-block__free {
@@ -1036,6 +1041,11 @@
   align-items: end;
 }
 .products-block__free .products-block__order_free {
+  margin-right: 10%;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
   color: #160404;
   font-size: 1.2rem;
   font-family: "Mediator Web";
@@ -1048,8 +1058,36 @@
   border-radius: 0.5rem;
   line-height: 1.55;
   display: flex;
+  align-content: center;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+}
+.products-block__free .products-block__order_free:hover {
+  background: rgb(146, 33, 4);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__order_free {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+    background-color: #b51628;
+    width: 12rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block__free .products-block__order_free {
+    width: 10rem;
+    height: 3rem;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+  }
 }
 .products-block__free .products-block__order_free:hover {
   background: #f4b647;
@@ -1153,6 +1191,11 @@
   align-items: end;
 }
 .products-block .products-block__order {
+  margin-right: 10%;
+  color: #160404;
+  font-size: 1.2rem;
+  font-family: "Mediator Web";
+  font-weight: 700;
   color: #160404;
   font-size: 1.2rem;
   font-family: "Mediator Web";
@@ -1170,5 +1213,34 @@
   flex-wrap: wrap;
 }
 .products-block .products-block__order:hover {
+  background: rgb(146, 33, 4);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .products-block .products-block__order {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+    background-color: #b51628;
+    width: 12rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 376px) {
+  .products-block .products-block__order {
+    width: 10rem;
+    height: 3rem;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 700;
+    color: white;
+  }
+}
+.products-block .products-block__order:hover {
   background: #f4b647;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*=================================================================Products=====================================================================*//*# sourceMappingURL=style.css.map */
