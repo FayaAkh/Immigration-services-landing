@@ -839,14 +839,60 @@
   background-color: antiquewhite;
   margin-top: 1em;
 }
+.products-block__free .products-block__guarantee {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #160404;
+  font-size: 1.1rem;
+  font-family: "Mediator Web";
+  font-weight: 400;
+  background-color: #0ABFBC;
+  max-width: 80%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  animation: identifier 2s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+  .products-block__free .products-block__guarantee {
+    color: #160404;
+    font-size: 1rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+  }
+}
+@media (max-width: 376px) {
+  .products-block__free .products-block__guarantee {
+    width: 90%;
+    color: #160404;
+    font-size: 0.8rem;
+    font-family: "Mediator Web";
+    font-weight: 400;
+  }
+}
+@keyframes identifier {
+  0% {
+    background-color: #0ABFBC;
+  }
+  50% {
+    background-color: #769393;
+  }
+  100% {
+    background-color: #0ABFBC;
+  }
+}
 .products-block__free .products-block__img_free {
-  grid-row: 1/3;
+  grid-row: 1/4;
   grid-column: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 @media (max-width: 768px) {
   .products-block__free .products-block__img_free {
