@@ -824,10 +824,6 @@
   }
 }
 
-.products-block__contact {
-  text-decoration: none;
-}
-
 .products-block__free {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
@@ -958,6 +954,9 @@
 }
 .products-block__free .products-block__list_free span {
   color: #b51628;
+}
+.products-block__free .products-block__list_free li {
+  margin-bottom: 1.5rem;
 }
 .products-block__free .products-block__btn_free {
   grid-row: 3/4;
