@@ -959,6 +959,9 @@
 .products-block__free .products-block__list_free span {
   color: #b51628;
 }
+.products-block__free .products-block__list_free li {
+  margin-bottom: 1.5rem;
+}
 .products-block__free .products-block__btn_free {
   grid-row: 3/4;
   grid-column: 3/4;
