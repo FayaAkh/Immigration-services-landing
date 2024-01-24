@@ -535,9 +535,6 @@ grid-gap: 2rem;
       @include text (1.8rem, 700);
     }
   }
-  .products-block__contact{
-    text-decoration: none;
-  }
   .products-block__free {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,auto));
