@@ -15,32 +15,4 @@ Project includes two adaptive versions.
 * ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 * ![BOOTSTRAP5](https://img.shields.io/badge/BOOTSTRAP5-blue?logo=bootstrap&logoColor=white)
 * ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-* ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-
- 
-### Our team:
- <h3>
-  <a href="https://github.com/FayaAkh">
-    <img alt="Faya" src="https://img.shields.io/badge/-Faya-black?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</h3>
- <h3>
-  <a href="https://github.com/grecha97">
-    <img alt="Elizaveta" src="https://img.shields.io/badge/- Elizaveta-black?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</h3>
- <h3>
-  <a href="https://github.com/NadinKonst">
-    <img alt="Nadin" src="https://img.shields.io/badge/-Nadin-black?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</h3>
- <h3>
-  <a href="https://github.com/AleksandrovaPolina">
-    <img alt="Polina" src="https://img.shields.io/badge/-Polina-black?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</h3>
- <h3>
-  <a href="https://github.com/easdln">
-    <img alt="easdln" src="https://img.shields.io/badge/-easdln-black?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</h3>
+* ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white
